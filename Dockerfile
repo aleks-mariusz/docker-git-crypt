@@ -19,9 +19,10 @@ RUN cd /var/tmp/git-crypt-$VERSION && CXXFLAGS='-DOPENSSL_API_COMPAT=0x30000000L
 
 FROM alpine:edge
 
-RUN apk --update add \
+RUN apk --no-cache --update add \
    bash \
    curl \
+   diffutils \
    git \
    jq \
    libstdc++ \
