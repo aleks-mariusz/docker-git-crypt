@@ -23,6 +23,7 @@ RUN apk --update add \
    bash \
    curl \
    git \
+   jq \
    libstdc++ \
    openssh \
    openssl \
